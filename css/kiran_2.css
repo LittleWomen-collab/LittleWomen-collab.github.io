@@ -1,0 +1,117 @@
+body {
+	-ms-overflow-style: none;
+  	scrollbar-width: none; 
+	margin: 0px;
+	padding: 0px;
+	font-family:"Bad Script";
+	/* overflow-x:hidden;
+	overflow-y: hidden; */
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#bg_2 {
+	position: absolute;
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+
+#meet {
+	position: absolute;
+	top: 2%;
+	left: 2%;
+	max-width: 45%;
+	width: auto;
+	height: auto;
+}
+
+
+#kiran_2 {
+	position: absolute;
+	top: -10%;
+	left: 70%;
+	max-width: 60%;
+	width: auto;
+	height: auto;
+}
+
+
+#personality_spotlight {
+	position: relative;
+	margin-top: 29%;
+	left: 60%;
+	max-width: 40%;
+	width: auto;
+	height: auto;
+	font-size: 250%;
+	color:#9b74a9;
+}
+
+
+#hiysdysmi {
+	position: absolute;
+	top: 20%;
+	left: 60%;
+	max-width: 20%;
+	width: auto;
+	height: auto;
+	font-size: 200%;
+	color:#1b1b1c;
+	font-weight: bold;
+}
+
+
+#arrow {
+	position: absolute;
+	top: 105%;
+	left: 70%;
+	max-width: 20%;
+	width: auto;
+	height: auto;
+}
+
+#bg_1 {
+	position: absolute;
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+
+#id {
+	position: absolute;
+	max-width: 80%;
+	width: auto;
+	height: auto;
+	margin-left: 10%;
+	margin-right: auto;
+	margin-top: 5%;
+	margin-bottom: auto;
+}
+
+#id_photo {
+	position: absolute;
+	top: 211%;
+	left: 65.05%;
+	max-width: 21%;
+	width: 35%;
+	height: auto;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.item-1 {
+    position: fixed;
+    top: 0;
+}
+
+.item-2 {
+    margin-top: 80%;
+}
+
+.item {
+    width: 100%;
+}

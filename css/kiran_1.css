@@ -1,0 +1,134 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family:"Bad Script";
+	/* overflow-x:hidden;
+	overflow-y: hidden; */
+}
+
+
+#background {
+	position: absolute;
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+
+
+#kiran {
+	position: absolute;
+	top: 3%;
+	left: 35%;
+	max-width: 40%;
+	width: auto;
+	height: auto;
+}
+
+
+#arrow {
+	position: absolute;
+	top: 80%;
+	left: 10%;
+	max-width: 16%;
+	width: auto;
+	height: auto;
+}
+
+
+#text_1 {
+	position: absolute;
+	top: 50%;
+	left: 30%;
+	max-width: 16%;
+	width: auto;
+	height: auto;
+	font-size: 190%;
+	font-weight: bold;
+	color:#1b1b1c;
+}
+
+
+#text_2 {
+	position: absolute;
+	top: 20%;
+	left: 30%;
+	max-width: 16%;
+	width: auto;
+	height: auto;
+	font-size: 190%;
+	font-weight: bold;
+	color:#1b1b1c;
+}
+
+
+#text_3 {
+	position: absolute;
+	top: 20%;
+	left: 70%;
+	max-width: 16%;
+	width: auto;
+	height: auto;
+	font-size: 190%;
+	font-weight: bold;
+	color:#1b1b1c;
+}
+
+
+#text_4 {
+	position: absolute;
+	top: 50%;
+	left: 75%;
+	max-width: 16%;
+	width: auto;
+	height: auto;
+	font-size: 190%;
+	font-weight: bold;
+	color:#1b1b1c;
+}
+
+
+#top_maya_kiran_a{
+	top: 6%;
+	left: 48%;
+	max-width: 22%;
+}
+
+#top_maya_kiran{
+	position: absolute;
+	top: inherit;
+	left: inherit;
+	max-width: inherit;
+	width: 576.391px;
+	height: 295px;
+}
+
+
+#middle_maya_kiran_a{
+	top: 36.5%;
+	left: 48%;
+	max-width: 22%;
+}
+
+#middle_maya_kiran {
+	position: absolute;
+	top: inherit;
+	left: inherit;
+	max-width: inherit;
+	width: 576.391px;
+	height: 340px;
+}
+
+#bottom_maya_kiran_a{
+	top: 71.86%;
+	left: 48%;
+	max-width: 22%;
+}
+
+#bottom_maya_kiran {
+	position: absolute;
+	top: inherit;
+	left: inherit;
+	max-width: inherit;
+	width: 576.391px;
+	height: 200px;
+}

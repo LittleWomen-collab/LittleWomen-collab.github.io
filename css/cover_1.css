@@ -1,0 +1,77 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family:"Bad Script";
+	overflow-x:hidden;
+	overflow-y: hidden;
+}
+
+
+#background {
+	position: absolute;
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+
+
+#logo {
+	position: absolute;
+	top: 5%;
+	left: 15%;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 70%;
+	width: auto;
+	height: auto;
+}
+
+
+#Kiran_Kumar {
+	position: absolute;
+	top: 20%;
+	left: -11%;
+	max-width: 37%;
+	width: auto;
+	height: auto;
+}
+
+
+#Kaylyn_Slevin {
+	position: absolute;
+	top:39%;
+	left: 80%;
+	max-width: 20%;
+	width: auto;
+	height: auto;
+}
+
+
+#Cali_Sheldon {
+	position: absolute;
+	top: 53.5%;
+	left: 49%;
+	max-width: 38%;
+	width: auto;
+	height: auto;
+}
+
+
+#Dylan_Weand {
+	position: absolute;
+	top: 60%;
+	left: 42%;
+	max-width: 16%;
+	width: auto;
+	height: auto;
+}
+
+
+#Ariana_Davis {
+	position: absolute;
+	top: 50%;
+	left: 20%;
+	max-width: 20%;
+	width: auto;
+	height: auto;
+}

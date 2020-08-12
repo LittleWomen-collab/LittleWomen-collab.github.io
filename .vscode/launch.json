@@ -19,6 +19,21 @@
             "url": "http://localhost:8080",
             "webRoot": "${workspaceFolder}",
             "file": "${workspaceFolder}/404.html"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "project",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}",
+            "file": "${workspaceFolder}/project/project.html"
+        },
+        {
+            "type": "python",
+            "request": "launch",
+            "name": "git-upload",
+            "program": "${workspaceFolder}/upload.py",
+            "args": ["--verbose"]
         }
     ]
 }
