@@ -748,9 +748,6 @@ function characters(){
     render_section("content-container", "item item-5", "item item-5");
     render_image("item item-5", "five", "characters/5.jpg");
 
-    render_section("content-container", "item item-6", "item item-6");
-    render_image("item item-6", "six", "characters/6.jpg");
-
     render_a("content-container", "arrow_a", "#", "project()");
     render_image("arrow_a", "arrow", "characters/arrow.png");
 
@@ -763,7 +760,7 @@ function characters(){
     var sectionFivth = document.querySelector('.item-5');
 
 
-    var SectionForthHeight = getComputedStyle(sectionSixth).height.split('px')[0];
+    var SectionForthHeight = getComputedStyle(sectionFivth).height.split('px')[0];
     
     var SectionOneHeight = 800;
     var SectionTwoHeight = 800;
