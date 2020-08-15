@@ -790,4 +790,4 @@ function characters(){
     }
 }
 
-characters();
+cover_1();
