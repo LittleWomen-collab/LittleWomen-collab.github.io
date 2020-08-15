@@ -91,7 +91,7 @@ function render_input(aE, tv, vv, nv, idv){
 
 function render_p(aE, idv, tv){
     appendElement = document.getElementById(aE);
-    tag = document.createElement("div");
+    tag = document.createElement("p");
 
     tagContent = document.createAttribute("id");
     tagContent.value = idv;
@@ -112,6 +112,21 @@ function render_section(aE, idv, cv){
 
     tagContent = document.createAttribute("class");
     tagContent.value = cv;
+    tag.setAttributeNode(tagContent);
+
+    appendElement.appendChild(tag);
+}
+
+function render_span(aE, idv, sv){
+    appendElement = document.getElementById(aE);
+    tag = document.createElement("span");
+
+    tagContent = document.createAttribute("id");
+    tagContent.value = idv;
+    tag.setAttributeNode(tagContent);
+
+    tagContent = document.createAttribute("style");
+    tagContent.value = sv;
     tag.setAttributeNode(tagContent);
 
     appendElement.appendChild(tag);
@@ -430,7 +445,7 @@ function kiran_2(){
     render_div("top_section", "hiysdysmi");
     render_p("hiysdysmi", "hiysdysmi_text", "\"Hi! If you'd like to see my ID, please scroll down!\"");
 
-    render_a("top_section", "arrow_a", "#", "cover_2()");
+    render_a("top_section", "arrow_a", "#", "kiran_1()");
     render_image("arrow_a", "arrow", "kiran_2/arrow.png");
 
 
@@ -463,7 +478,7 @@ function project(){
 
     render_image("content-container", "main_image", "project/main.png");
 
-    render_a("content-container", "arrow_a", "#", "cover_2()")
+    render_a("content-container", "arrow_a", "#", "kiran_1()")
     render_image("arrow_a", "arrow", "project/arrow.png");
 
     render_a("content-container", "testimonials_a", "#", "testimonials()")
@@ -490,8 +505,289 @@ function project(){
     render_a("content-container", "mission_a", "#", "mission()")
     render_div("mission_a", "mission");
 
-    render_a("content-container", "ci_a", "#", "ci()")
+    render_a("content-container", "ci_a", "#", "contact()")
     render_div("ci_a", "ci");
 }
 
-cover_1();
+function contact(){
+    document.getElementById("main_css").setAttribute("href", "css/contact.css");
+    
+    render_remover("main_body");
+
+    render_div("main_body", "content-container");
+
+    render_div("content-container", "bg");
+
+    render_div("content-container", "contact_us");
+    render_p("contact_us", "cu", "Contact Us!");
+
+    render_div("content-container", "main_insta_tiktok");
+    render_span("main_insta_tiktok", "span_1", "color:#000000; font-style:normal;");
+    render_p("span_1", "text_1", "little.women.show@gmail.com<br/>Our Instagram - @littlewomenshow<br/>Our tik tok - @littlewomenshow");
+    render_span("main_insta_tiktok", "span_2", "color:#000000; font-size:70px; font-style:normal;");
+
+    render_image("content-container", "dylan", "contact/dylan.png");
+
+    render_a("content-container", "arrow_a", "#", "project()");
+    render_image("arrow_a", "arrow", "contact/arrow.png");
+}
+
+function mission(){
+    document.getElementById("main_css").setAttribute("href", "css/mission.css");
+
+    render_remover("main_body");
+
+    render_div("main_body", "content-container");
+
+    render_image("content-container", "mission", "mission/mission.png");
+
+    render_image("content-container", "dylan", "mission/dylan.png");
+
+    render_a("content-container", "arrow_a", "#", "project()");
+    render_image("arrow_a", "arrow", "mission/arrow.png");
+}
+
+function testimonials(){
+    document.getElementById("main_css").setAttribute("href", "css/testimonials.css");
+
+    render_remover("main_body");
+
+    render_div("main_body", "content-container");
+
+    render_image("content-container", "testimonials", "testimonials/testimonials.png");
+    
+    render_a("content-container", "arrow_a", "#", "project()");
+    render_image("arrow_a", "arrow", "testimonials/arrow.png");
+}
+
+function tonality(){
+    document.getElementById("main_css").setAttribute("href", "css/tonality.css");
+
+    render_remover("main_body");
+
+    render_div("main_body", "content-container");
+
+    render_image("content-container", "tonality", "tonality/tonality.png");
+    
+    render_a("content-container", "arrow_a", "#", "project()");
+    render_image("arrow_a", "arrow", "tonality/arrow.png");
+}
+
+function cast(){
+    document.getElementById("main_css").setAttribute("href", "css/cast.css");
+
+    render_remover("main_body");
+
+    render_div("main_body", "content-container");
+
+    render_section("content-container", "item item-1", "item item-1");
+    render_image("item item-1", "one", "cast/1.png");
+
+    render_section("content-container", "item item-2", "item item-2");
+    render_image("item item-2", "two", "cast/2.png");
+
+    render_section("content-container", "item item-3", "item item-3");
+    render_image("item item-3", "three", "cast/3.png");
+
+    render_section("content-container", "item item-4", "item item-4");
+    render_image("item item-4", "four", "cast/4.png");
+
+    render_section("content-container", "item item-5", "item item-5");
+    render_image("item item-5", "five", "cast/5.png");
+
+    render_section("content-container", "item item-6", "item item-6");
+    render_image("item item-6", "six", "cast/6.png");
+
+    render_section("content-container", "item item-7", "item item-7");
+    render_image("item item-7", "seven", "cast/7.png");
+
+    render_a("content-container", "arrow_a", "#", "project()");
+    render_image("arrow_a", "arrow", "cast/arrow.png");
+
+    window.addEventListener('scroll', onScroll, false);
+
+    var sectionOne = document.querySelector('.item-1');
+    var sectionTwo = document.querySelector('.item-2');
+    var sectionThree = document.querySelector('.item-3');
+    var sectionForth = document.querySelector('.item-4');
+    var sectionFivth = document.querySelector('.item-5');
+    var sectionSixth = document.querySelector('.item-6');
+    var sectionSeventh = document.querySelector('.item-7');
+
+    console.log(getComputedStyle(sectionOne).height);
+
+
+    var SectionSixthHeight = getComputedStyle(sectionSixth).height.split('px')[0];
+    
+    var SectionOneHeight = 800;
+    var SectionTwoHeight = 800;
+    var SectionThreeHeight = 800;
+    var SectionForthHeight = 800;
+    var SectionFivthHeight = 800;
+
+    var checkPointOne = parseFloat(SectionOneHeight);
+    var checkPointTwo = checkPointOne + parseFloat(SectionTwoHeight);
+    var checkPointThree = checkPointTwo + parseFloat(SectionThreeHeight);
+    var checkPointForth = checkPointThree + parseFloat(SectionForthHeight);
+    var checkPointFive = checkPointForth + parseFloat(SectionFivthHeight);
+    var checkPointSix = checkPointFive + parseFloat(SectionSixthHeight);
+
+    function onScroll() {
+        var scrollBarPosition = window.pageYOffset | document.body.scrollTop
+        if (scrollBarPosition >= 0 && scrollBarPosition < checkPointOne) {
+            removeClass(sectionTwo, sectionThree)
+        } else if (scrollBarPosition > checkPointOne && scrollBarPosition <= checkPointTwo) {
+            addClass(sectionTwo, sectionThree, checkPointTwo)
+            removeClass(sectionThree, sectionForth)
+        } else if (scrollBarPosition > checkPointTwo && scrollBarPosition <= checkPointThree) {
+            addClass(sectionThree, sectionForth, checkPointThree)
+            removeClass(sectionForth, sectionFivth)
+        } else if (scrollBarPosition > checkPointThree && scrollBarPosition <= checkPointForth) {
+            addClass(sectionForth, sectionFivth, checkPointForth)
+            removeClass(sectionFivth, sectionSixth)
+        } else if (scrollBarPosition > checkPointForth && scrollBarPosition <= checkPointFive) {
+            addClass(sectionFivth, sectionSixth, checkPointFive)
+            removeClass(sectionSixth, sectionSeventh)
+        } else if (scrollBarPosition > checkPointFive && scrollBarPosition <= checkPointSix) {
+            addClass(sectionSixth, sectionSeventh, checkPointSix)
+        }
+    }
+}
+
+function about(){
+    
+    document.getElementById("main_css").setAttribute("href", "css/about.css");
+
+    render_remover("main_body");
+
+    render_div("main_body", "content-container");
+
+    render_section("content-container", "item item-1", "item item-1");
+    render_image("item item-1", "one", "about/1.png");
+
+    render_section("content-container", "item item-2", "item item-2");
+    render_image("item item-2", "two", "about/2.png");
+
+    render_section("content-container", "item item-3", "item item-3");
+    render_image("item item-3", "three", "about/3.png");
+
+    render_section("content-container", "item item-4", "item item-4");
+    render_image("item item-4", "four", "about/4.png");
+
+    render_section("content-container", "item item-5", "item item-5");
+    render_image("item item-5", "five", "about/5.png");
+
+    render_section("content-container", "item item-6", "item item-6");
+    render_image("item item-6", "six", "about/6.png");
+
+    render_a("content-container", "arrow_a", "#", "project()");
+    render_image("arrow_a", "arrow", "about/arrow.png");
+
+    window.addEventListener('scroll', onScroll, false);
+
+    var sectionOne = document.querySelector('.item-1');
+    var sectionTwo = document.querySelector('.item-2');
+    var sectionThree = document.querySelector('.item-3');
+    var sectionForth = document.querySelector('.item-4');
+    var sectionFivth = document.querySelector('.item-5');
+    var sectionSixth = document.querySelector('.item-6');
+
+
+    var SectionFivthHeight = getComputedStyle(sectionSixth).height.split('px')[0];
+    
+    var SectionOneHeight = 800;
+    var SectionTwoHeight = 800;
+    var SectionThreeHeight = 800;
+    var SectionForthHeight = 800;
+
+    var checkPointOne = parseFloat(SectionOneHeight);
+    var checkPointTwo = checkPointOne + parseFloat(SectionTwoHeight);
+    var checkPointThree = checkPointTwo + parseFloat(SectionThreeHeight);
+    var checkPointForth = checkPointThree + parseFloat(SectionForthHeight);
+    var checkPointFive = checkPointForth + parseFloat(SectionFivthHeight);
+
+    function onScroll() {
+        var scrollBarPosition = window.pageYOffset | document.body.scrollTop
+        if (scrollBarPosition >= 0 && scrollBarPosition < checkPointOne) {
+            removeClass(sectionTwo, sectionThree)
+        } else if (scrollBarPosition > checkPointOne && scrollBarPosition <= checkPointTwo) {
+            addClass(sectionTwo, sectionThree, checkPointTwo)
+            removeClass(sectionThree, sectionForth)
+        } else if (scrollBarPosition > checkPointTwo && scrollBarPosition <= checkPointThree) {
+            addClass(sectionThree, sectionForth, checkPointThree)
+            removeClass(sectionForth, sectionFivth)
+        } else if (scrollBarPosition > checkPointThree && scrollBarPosition <= checkPointForth) {
+            addClass(sectionForth, sectionFivth, checkPointForth)
+            removeClass(sectionFivth, sectionSixth)
+        } else if (scrollBarPosition > checkPointForth && scrollBarPosition <= checkPointFive) {
+            addClass(sectionFivth, sectionSixth, checkPointFive)
+        } 
+    }
+}
+
+function characters(){
+    
+    document.getElementById("main_css").setAttribute("href", "css/characters.css");
+
+    render_remover("main_body");
+
+    render_div("main_body", "content-container");
+
+    render_section("content-container", "item item-1", "item item-1");
+    render_image("item item-1", "one", "characters/1.jpg");
+
+    render_section("content-container", "item item-2", "item item-2");
+    render_image("item item-2", "two", "characters/2.jpg");
+
+    render_section("content-container", "item item-3", "item item-3");
+    render_image("item item-3", "three", "characters/3.jpg");
+
+    render_section("content-container", "item item-4", "item item-4");
+    render_image("item item-4", "four", "characters/4.jpg");
+
+    render_section("content-container", "item item-5", "item item-5");
+    render_image("item item-5", "five", "characters/5.jpg");
+
+    render_section("content-container", "item item-6", "item item-6");
+    render_image("item item-6", "six", "characters/6.jpg");
+
+    render_a("content-container", "arrow_a", "#", "project()");
+    render_image("arrow_a", "arrow", "characters/arrow.png");
+
+    window.addEventListener('scroll', onScroll, false);
+
+    var sectionOne = document.querySelector('.item-1');
+    var sectionTwo = document.querySelector('.item-2');
+    var sectionThree = document.querySelector('.item-3');
+    var sectionForth = document.querySelector('.item-4');
+    var sectionFivth = document.querySelector('.item-5');
+
+
+    var SectionForthHeight = getComputedStyle(sectionSixth).height.split('px')[0];
+    
+    var SectionOneHeight = 800;
+    var SectionTwoHeight = 800;
+    var SectionThreeHeight = 800;
+
+    var checkPointOne = parseFloat(SectionOneHeight);
+    var checkPointTwo = checkPointOne + parseFloat(SectionTwoHeight);
+    var checkPointThree = checkPointTwo + parseFloat(SectionThreeHeight);
+    var checkPointForth = checkPointThree + parseFloat(SectionForthHeight);
+
+    function onScroll() {
+        var scrollBarPosition = window.pageYOffset | document.body.scrollTop
+        if (scrollBarPosition >= 0 && scrollBarPosition < checkPointOne) {
+            removeClass(sectionTwo, sectionThree)
+        } else if (scrollBarPosition > checkPointOne && scrollBarPosition <= checkPointTwo) {
+            addClass(sectionTwo, sectionThree, checkPointTwo)
+            removeClass(sectionThree, sectionForth)
+        } else if (scrollBarPosition > checkPointTwo && scrollBarPosition <= checkPointThree) {
+            addClass(sectionThree, sectionForth, checkPointThree)
+            removeClass(sectionForth, sectionFivth)
+        } else if (scrollBarPosition > checkPointThree && scrollBarPosition <= checkPointForth) {
+            addClass(sectionForth, sectionFivth, checkPointForth)
+        } 
+    }
+}
+
+characters();

@@ -1,0 +1,84 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family:"Bad Script";
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+#content-container{
+	max-width: 100%;
+	max-height: 100%;
+	width: 1920px;
+	height: 1080px;
+}
+
+#background {
+	position: absolute;
+	max-width: 100%;
+	max-height: 100%;
+	width: 1920px;
+	height: 1080px;
+}
+
+#bg {
+	position: absolute;
+	max-width: 100%;
+	max-height: 100%;
+	width: 1920px;
+	height: 1080px;
+	background:rgba(170,140,156,255);
+}
+
+
+#contact_us {
+	position: absolute;
+	top: 15.324%;
+	left: 2.338%;
+	width: 42.197%;
+	height: 26.296%;
+	font-family: Segoe Script;
+	font-size: 7.21003963011889vh;
+	font-weight: bold;
+	text-align: left;
+	line-height: 70px;
+	color:#000000;
+}
+
+
+#main_insta_tiktok {
+	position: absolute;
+	top: 38.056%;
+	left: 5.991%;
+	max-width: 91.697%;
+	/* max-height: 62.963%; */
+	width: auto;
+	height: auto;
+	overflow: hidden;
+	font-family: Segoe Script;
+	font-size: 7.21003963011889vh;
+	font-weight: bold;
+	text-align: left;
+	line-height: 70px;
+	color:#000000;
+}
+
+
+#dylan {
+	position: absolute;
+	top: 16.847%;
+	left: 68.794%;
+	max-width: 34.059%;
+	width: 648.1376953125px;
+	height: auto;
+}
+
+
+#arrow {
+	position: absolute;
+	top: 78.443%;
+	left: 8.096%;
+	max-width: 25.645%;
+	width: 488.03369140625px25;
+	height: auto;
+}

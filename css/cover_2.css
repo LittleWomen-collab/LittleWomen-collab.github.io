@@ -2,26 +2,32 @@ body {
 	margin: 0px;
 	padding: 0px;
 	font-family:"Bad Script";
-	overflow-x:hidden;
+	overflow-x: hidden;
 	overflow-y: hidden;
 }
 
+#content-container{
+	max-width: 100%;
+	max-height: 100%;
+	width: 1920px;
+	height: 1080px;
+}
 
 #background {
 	position: absolute;
 	max-width: 100%;
-	width: auto;
-	height: auto;
+	max-height: 100%;
+	width: 1920px;
+	height: 1080px;
 }
 
 
 #logo {
 	position: absolute;
-	top: 5%;
-	left: 15%;
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 70%;
+	top: 4.537%;
+	left: 25.801%;
+	max-width: 78.403%;
+	max-height: 66.296%;
 	width: auto;
 	height: auto;
 }
@@ -29,9 +35,10 @@ body {
 
 #kiran {
 	position: absolute;
-	top: 29%;
-	left: -10%;
-	max-width: 34%;
+	top: 35.833%;
+	left: -7.567%;
+	max-width: 31.266%;
+	max-height: 73.333%;
 	width: auto;
 	height: auto;
 }
@@ -39,18 +46,21 @@ body {
 
 #scarlett {
 	position: absolute;
-	top: 12.5%;
-	left: 80%;
-	max-width: 24%;
+	top: 21.296%;
+	left: 81.766%;
+	max-width: 23.857%;
+	max-height: 78.704%;
 	width: auto;
 	height: auto;
 }
 
+
 #cali {
 	position: absolute;
-	top: 16%;
-	left: 56%;
-	max-width: 37%;
+	top: 23.333%;
+	left: 56.752%;
+	max-width: 36.942%;
+	max-height: 80.185%;
 	width: auto;
 	height: auto;
 }
@@ -58,9 +68,10 @@ body {
 
 #dylan {
 	position: absolute;
-	top: 23%;
-	left: 41%;
-	max-width: 28%;
+	top: 31.389%;
+	left: 38.571%;
+	max-width: 28.797%;
+	max-height: 76.111%;
 	width: auto;
 	height: auto;
 }
@@ -68,9 +79,10 @@ body {
 
 #ariana {
 	position: absolute;
-	top: 18%;
-	left: 20%;
-	max-width: 30%;;
+	top: 26.759%;
+	left: 19.863%;
+	max-width: 28.692%;
+	max-height: 73.241%;
 	width: auto;
 	height: auto;
 }
