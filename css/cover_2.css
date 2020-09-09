@@ -23,6 +23,7 @@ body {
 
 
 #logo {
+	/*
 	position: absolute;
 	top: 4.537%;
 	left: 25.801%;
@@ -30,9 +31,15 @@ body {
 	max-height: 66.296%;
 	width: auto;
 	height: auto;
+	*/
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
 }
 
-
+/*
 #kiran {
 	position: absolute;
 	top: 35.833%;
@@ -83,6 +90,47 @@ body {
 	left: 19.863%;
 	max-width: 28.692%;
 	max-height: 73.241%;
+	width: auto;
+	height: auto;
+}
+*/
+
+#cali {
+	position: absolute;
+	top: 30%;
+	left: 15%;
+	max-width: 31.266%;
+	max-height: 73.333%;
+	width: auto;
+	height: auto;
+}
+
+#scarlett {
+	position: absolute;
+	top: 29.111%;
+	left: 30%;
+	max-width: 28.692%;
+	max-height: 73.241%;
+	width: auto;
+	height: auto;
+}
+
+#kiran {
+	position: absolute;
+	top: 38.333%;
+	left: 35%;
+	max-width: 36.942%;
+	max-height: 80.185%;
+	width: auto;
+	height: auto;
+}
+
+#ariana {
+	position: absolute;
+	top: 31.111%;
+	left: 58%;
+	max-width: 23.857%;
+	max-height: 78.704%;
 	width: auto;
 	height: auto;
 }

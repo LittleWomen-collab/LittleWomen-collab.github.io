@@ -22,6 +22,7 @@ body {
 }
 
 #logo {
+	/*
 	position: absolute;
 	top: 4.537%;
 	left: 25.801%;
@@ -29,8 +30,15 @@ body {
 	max-height: 66.296%;
 	width: auto;
 	height: auto;
+	*/
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
 }
 
+/*
 #Kiran_Kumar {
 	position: absolute;
 	top: 33.148%;
@@ -64,6 +72,7 @@ body {
 }
 
 
+
 #Dylan_Weand {
 	position: absolute;
 	top: 57.222%;
@@ -84,3 +93,46 @@ body {
 	width: auto;
 	height: auto;
 }
+*/
+
+#Cali_Sheldon {
+	position: absolute;
+	top: 50.111%;
+	left: 10%;
+	max-width: 36.626%;
+	max-height: 85.926%;
+	width: auto;
+	height: auto;
+}
+
+#Kaylyn_Slevin {
+	position: absolute;
+	top: 50.111%;
+	left: 40%;
+	max-width: 24.488%;
+	max-height: 50.185%;
+	width: auto;
+	height: auto;
+}
+
+#Kiran_Kumar {
+	position: absolute;
+	top: 35.111%;
+	left: 50%;
+	max-width: 72.564%;
+	max-height: 80.111%;
+	width: auto;
+	height: auto;
+}
+
+#Ariana_Davis {
+	position: absolute;
+	top: 43.333%;
+	left: 70%;
+	max-width: 21.335%;
+	max-height: 56.852%;
+	width: auto;
+	height: auto;
+}
+
+
