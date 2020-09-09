@@ -157,11 +157,10 @@ function cover_1(){
     render_div("_bg__cover_1_link", "content-container")
     render_image("content-container", "background", "cover_1/background.png");
     render_image("content-container", "logo", "cover_1/logo.png");
+    render_image("content-container", "Cali_Sheldon", "cover_1/Cali_Sheldon.png");
+    render_image("content-container", "Ariana_Davis", "cover_1/Ariana_Davis.png");
     render_image("content-container", "Kiran_Kumar", "cover_1/Kiran_Kumar.png");
     render_image("content-container", "Kaylyn_Slevin", "cover_1/Kaylyn_Slevin.png");
-    render_image("content-container", "Cali_Sheldon", "cover_1/Cali_Sheldon.png");
-    render_image("content-container",  "Dylan_Weand", "cover_1/Dylan_Weand.png");
-    render_image("content-container", "Ariana_Davis", "cover_1/Ariana_Davis.png");
     render_form("main_body", "main_form", "", "cover_2()");
     render_input("main_form", "button", "", "goTo404", "bruh_submit");
     
@@ -194,10 +193,6 @@ function cover_2(){
     render_a("content-container", "cali_a", "#", "cali()");
     render_div("cali_a", "cali_div");
     render_image("cali_div", "cali", "cover_2/cali.png");
-
-    render_a("content-container", "dylan_a", "#", "dylan()");
-    render_div("dylan_a", "dylan_div");
-    render_image("dylan_div", "dylan", "cover_2/dylan.png");
 
     render_a("content-container", "ariana_a", "#", "ariana()");
     render_div("ariana_a", "ariana_div");
@@ -487,8 +482,8 @@ function project(){
     render_a("content-container", "tiktok_a", "https://www.tiktok.com/@littlewomenshow")
     render_div("tiktok_a", "tiktok");
 
-    render_a("content-container", "tonaltiy_a", "#", "tonaltiy()")
-    render_div("tonaltiy_a", "tonaltiy");
+    render_a("content-container", "tonality_a", "#", "tonality()")
+    render_div("tonality_a", "tonality");
 
     render_a("content-container", "instagram_a", "https://www.instagram.com/littlewomenshow/")
     render_div("instagram_a", "instagram");
@@ -523,10 +518,10 @@ function contact(){
 
     render_div("content-container", "main_insta_tiktok");
     render_span("main_insta_tiktok", "span_1", "color:#000000; font-style:normal;");
-    render_p("span_1", "text_1", "little.women.show@gmail.com<br/>Our Instagram - @littlewomenshow<br/>Our tik tok - @littlewomenshow");
+    render_p("span_1", "text_1", "little.women.show@gmail.com<br/>Our Instagram - <a href='https://www.tiktok.com/@littlewomenshow' target='_blank'>@littlewomenshow</a><br/>Our tik tok - <a href='https://www.tiktok.com/@littlewomenshow' target='_blank'>@littlewomenshow</a>");
     render_span("main_insta_tiktok", "span_2", "color:#000000; font-size:70px; font-style:normal;");
 
-    render_image("content-container", "dylan", "contact/dylan.png");
+    render_image("content-container", "ariana", "contact/ariana.png");
 
     render_a("content-container", "arrow_a", "#", "project()");
     render_image("arrow_a", "arrow", "contact/arrow.png");
@@ -541,7 +536,7 @@ function mission(){
 
     render_image("content-container", "mission", "mission/mission.png");
 
-    render_image("content-container", "dylan", "mission/dylan.png");
+    render_image("content-container", "kiran", "mission/kiran.png");
 
     render_a("content-container", "arrow_a", "#", "project()");
     render_image("arrow_a", "arrow", "mission/arrow.png");
@@ -654,77 +649,6 @@ function cast(){
     }
 }
 
-function about(){
-    
-    document.getElementById("main_css").setAttribute("href", "css/about.css");
-
-    render_remover("main_body");
-
-    render_div("main_body", "content-container");
-
-    render_section("content-container", "item item-1", "item item-1");
-    render_image("item item-1", "one", "about/1.png");
-
-    render_section("content-container", "item item-2", "item item-2");
-    render_image("item item-2", "two", "about/2.png");
-
-    render_section("content-container", "item item-3", "item item-3");
-    render_image("item item-3", "three", "about/3.png");
-
-    render_section("content-container", "item item-4", "item item-4");
-    render_image("item item-4", "four", "about/4.png");
-
-    render_section("content-container", "item item-5", "item item-5");
-    render_image("item item-5", "five", "about/5.png");
-
-    render_section("content-container", "item item-6", "item item-6");
-    render_image("item item-6", "six", "about/6.png");
-
-    render_a("content-container", "arrow_a", "#", "project()");
-    render_image("arrow_a", "arrow", "about/arrow.png");
-
-    window.addEventListener('scroll', onScroll, false);
-
-    var sectionOne = document.querySelector('.item-1');
-    var sectionTwo = document.querySelector('.item-2');
-    var sectionThree = document.querySelector('.item-3');
-    var sectionForth = document.querySelector('.item-4');
-    var sectionFivth = document.querySelector('.item-5');
-    var sectionSixth = document.querySelector('.item-6');
-
-
-    var SectionFivthHeight = getComputedStyle(sectionSixth).height.split('px')[0];
-    
-    var SectionOneHeight = 800;
-    var SectionTwoHeight = 800;
-    var SectionThreeHeight = 800;
-    var SectionForthHeight = 800;
-
-    var checkPointOne = parseFloat(SectionOneHeight);
-    var checkPointTwo = checkPointOne + parseFloat(SectionTwoHeight);
-    var checkPointThree = checkPointTwo + parseFloat(SectionThreeHeight);
-    var checkPointForth = checkPointThree + parseFloat(SectionForthHeight);
-    var checkPointFive = checkPointForth + parseFloat(SectionFivthHeight);
-
-    function onScroll() {
-        var scrollBarPosition = window.pageYOffset | document.body.scrollTop
-        if (scrollBarPosition >= 0 && scrollBarPosition < checkPointOne) {
-            removeClass(sectionTwo, sectionThree)
-        } else if (scrollBarPosition > checkPointOne && scrollBarPosition <= checkPointTwo) {
-            addClass(sectionTwo, sectionThree, checkPointTwo)
-            removeClass(sectionThree, sectionForth)
-        } else if (scrollBarPosition > checkPointTwo && scrollBarPosition <= checkPointThree) {
-            addClass(sectionThree, sectionForth, checkPointThree)
-            removeClass(sectionForth, sectionFivth)
-        } else if (scrollBarPosition > checkPointThree && scrollBarPosition <= checkPointForth) {
-            addClass(sectionForth, sectionFivth, checkPointForth)
-            removeClass(sectionFivth, sectionSixth)
-        } else if (scrollBarPosition > checkPointForth && scrollBarPosition <= checkPointFive) {
-            addClass(sectionFivth, sectionSixth, checkPointFive)
-        } 
-    }
-}
-
 function characters(){
     
     document.getElementById("main_css").setAttribute("href", "css/characters.css");
@@ -786,5 +710,77 @@ function characters(){
         } 
     }
 }
+
+function team(){
+    
+    document.getElementById("main_css").setAttribute("href", "css/team.css");
+
+    render_remover("main_body");
+
+    render_div("main_body", "content-container");
+
+    render_section("content-container", "item item-1", "item item-1");
+    render_image("item item-1", "one", "team/1.png");
+
+    render_section("content-container", "item item-2", "item item-2");
+    render_image("item item-2", "two", "team/2.png");
+
+    render_section("content-container", "item item-3", "item item-3");
+    render_image("item item-3", "three", "team/3.png");
+
+    render_section("content-container", "item item-4", "item item-4");
+    render_image("item item-4", "four", "team/4.png");
+
+    render_section("content-container", "item item-5", "item item-5");
+    render_image("item item-5", "five", "team/5.png");
+
+    render_section("content-container", "item item-6", "item item-6");
+    render_image("item item-6", "six", "team/6.png");
+
+    render_a("content-container", "arrow_a", "#", "project()");
+    render_image("arrow_a", "arrow", "team/arrow.png");
+
+    window.addEventListener('scroll', onScroll, false);
+
+    var sectionOne = document.querySelector('.item-1');
+    var sectionTwo = document.querySelector('.item-2');
+    var sectionThree = document.querySelector('.item-3');
+    var sectionForth = document.querySelector('.item-4');
+    var sectionFivth = document.querySelector('.item-5');
+    var sectionSixth = document.querySelector('.item-6');
+
+
+    var SectionFivthHeight = getComputedStyle(sectionSixth).height.split('px')[0];
+    
+    var SectionOneHeight = 800;
+    var SectionTwoHeight = 800;
+    var SectionThreeHeight = 800;
+    var SectionForthHeight = 800;
+
+    var checkPointOne = parseFloat(SectionOneHeight);
+    var checkPointTwo = checkPointOne + parseFloat(SectionTwoHeight);
+    var checkPointThree = checkPointTwo + parseFloat(SectionThreeHeight);
+    var checkPointForth = checkPointThree + parseFloat(SectionForthHeight);
+    var checkPointFive = checkPointForth + parseFloat(SectionFivthHeight);
+
+    function onScroll() {
+        var scrollBarPosition = window.pageYOffset | document.body.scrollTop
+        if (scrollBarPosition >= 0 && scrollBarPosition < checkPointOne) {
+            removeClass(sectionTwo, sectionThree)
+        } else if (scrollBarPosition > checkPointOne && scrollBarPosition <= checkPointTwo) {
+            addClass(sectionTwo, sectionThree, checkPointTwo)
+            removeClass(sectionThree, sectionForth)
+        } else if (scrollBarPosition > checkPointTwo && scrollBarPosition <= checkPointThree) {
+            addClass(sectionThree, sectionForth, checkPointThree)
+            removeClass(sectionForth, sectionFivth)
+        } else if (scrollBarPosition > checkPointThree && scrollBarPosition <= checkPointForth) {
+            addClass(sectionForth, sectionFivth, checkPointForth)
+            removeClass(sectionFivth, sectionSixth)
+        } else if (scrollBarPosition > checkPointForth && scrollBarPosition <= checkPointFive) {
+            addClass(sectionFivth, sectionSixth, checkPointFive)
+        } 
+    }
+}
+
 
 cover_1();
