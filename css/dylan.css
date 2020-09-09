@@ -1,0 +1,131 @@
+body {
+	-ms-overflow-style: none;
+  	scrollbar-width: none; 
+	margin: 0px;
+	padding: 0px;
+	font-family:"Bad Script";
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#content-container{
+	max-width: 100%;
+	max-height: 100%;
+	width: 1920px;
+	height: 1080px;
+}
+
+
+#bg_2 {
+	position: absolute;
+	max-width: 100%;
+	width: 1920px;
+	height: 1080px;
+}
+
+
+#meet {
+	position: absolute;
+	top: 10.833%;
+	left: 4.572%;
+	max-width: 45.478%;
+	width: 903.5px;
+	height: auto;
+}
+
+
+#dylan {
+	position: absolute;
+	top: 7.411%;
+	left: 75.38%;
+	max-width: 52.958%;
+	width: 1007.7880859375px;
+	height: auto;
+}
+
+
+#personality_spotlight {
+	position: relative;
+	margin-top: 29%;
+	top: auto;
+	left: 54.519%;
+	max-width: 34.262%;
+	width: 652px;
+	height: auto;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 100px;
+	color:#9b74a9;
+}
+
+#hiysdysmi {
+	position: absolute;
+	top: 24.028%;
+	left: 58.986%;
+	max-width: 25.486%;
+	width: 485px;
+	height: auto;
+	font-size: 187.5%;
+	font-weight: bold;
+	text-align: left;
+	line-height: 70px;
+	color:#1b1b1c;
+}
+
+#arrow {
+	position: absolute;
+	top: 73.258%;
+	left: 75.253%;
+	max-width: 25.645%;
+	width: 488.03369140625px;
+	height: auto;
+}
+
+#bottom_section {
+	position: absolute;
+}
+
+#bg_1 {
+	position: absolute;
+	max-width: 100%;
+	width: 1920px;
+	height: 1080px;
+}
+
+
+#id {
+	position: absolute;
+	margin-top: 4.352%;
+	left: 10.72%;
+	max-width: 82.712%;
+	width: 1574px;
+	height: auto;
+}
+
+#id_photo {
+	position: absolute;
+	margin-top: 23.13%;
+	left: 67.21%;
+	max-width: 23.808%;
+	width: 415px;
+	height: auto;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.item-1 {
+    position: fixed;
+    top: 0;
+}
+
+.item-2 {
+    margin-top: 80%;
+}
+
+.item {
+    width: 100%;
+}

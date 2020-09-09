@@ -1,0 +1,115 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family:"Bad Script";
+	overflow-x:hidden;
+	overflow-y: hidden;
+}
+
+#content-container{
+	max-width: 100%;
+	max-height: 100%;
+	width: 1920px;
+	height: 1080px;
+}
+
+
+#main_image {
+	position: absolute;
+	max-width: 100%;
+	max-height: 100%;
+	width: 1920px;
+	height: 1080px;
+}
+
+
+#arrow {
+	position: absolute;
+	top: 80.295%;
+	left: 69.157%;
+	max-width: 25.645%;
+	max-height: 17.859%;
+	width: 25.645%;
+	height: 17.859%;
+}
+
+
+#testimonials {
+	position: absolute;
+	top: 7.0%;
+	left: 78%;
+	width: 19.548%;
+	height: 13.981%;
+}
+
+
+#tiktok {
+	position: absolute;
+	top: 68.981%;
+	left: 78%;
+	width: 19.548%;
+	height: 13.981%;
+}
+
+
+#tonality {
+	position: absolute;
+	top: 5.463%;
+	left: 2.26%;
+	width: 19.548%;
+	height: 13.981%;
+}
+
+
+#instagram {
+	position: absolute;
+	top: 68.981%;
+	left: 0%;
+	width: 19.548%;
+	height: 13.981%;
+}
+
+
+#cast {
+	position: absolute;
+	top: 31.019%;
+	left: 27.956%;
+	width: 14.346%;
+	height: 23.889%;
+}
+
+
+#characters {
+	position: absolute;
+	top: 31.019%;
+	left: 43.248%;
+	width: 14.346%;
+	height: 23.889%;
+}
+
+
+#team {
+	position: absolute;
+	top: 31.019%;
+	left: 58.539%;
+	width: 14.346%;
+	height: 23.889%;
+}
+
+
+#mission {
+	position: absolute;
+	top: 68.241%;
+	left: 50.447%;
+	width: 14.346%;
+	height: 23.889%;
+}
+
+
+#ci {
+	position: absolute;
+	top: 68.241%;
+	left: 33.263%;
+	width: 14.346%;
+	height: 23.889%;
+}

@@ -1,0 +1,136 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family:"Bad Script";
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+#content-container{
+	max-width: 100%;
+	max-height: 100%;
+	width: 1920px;
+	height: 1080px;
+}
+
+#background {
+	position: absolute;
+	max-width: 100%;
+	max-height: 100%;
+	width: 1920px;
+	height: 1080px;
+}
+
+
+#logo {
+	/*
+	position: absolute;
+	top: 4.537%;
+	left: 25.801%;
+	max-width: 78.403%;
+	max-height: 66.296%;
+	width: auto;
+	height: auto;
+	*/
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+/*
+#kiran {
+	position: absolute;
+	top: 35.833%;
+	left: -7.567%;
+	max-width: 31.266%;
+	max-height: 73.333%;
+	width: auto;
+	height: auto;
+}
+
+
+#scarlett {
+	position: absolute;
+	top: 21.296%;
+	left: 81.766%;
+	max-width: 23.857%;
+	max-height: 78.704%;
+	width: auto;
+	height: auto;
+}
+
+
+#cali {
+	position: absolute;
+	top: 23.333%;
+	left: 56.752%;
+	max-width: 36.942%;
+	max-height: 80.185%;
+	width: auto;
+	height: auto;
+}
+
+
+#dylan {
+	position: absolute;
+	top: 31.389%;
+	left: 38.571%;
+	max-width: 28.797%;
+	max-height: 76.111%;
+	width: auto;
+	height: auto;
+}
+
+
+#ariana {
+	position: absolute;
+	top: 26.759%;
+	left: 19.863%;
+	max-width: 28.692%;
+	max-height: 73.241%;
+	width: auto;
+	height: auto;
+}
+*/
+
+#cali {
+	position: absolute;
+	top: 30%;
+	left: 15%;
+	max-width: 31.266%;
+	max-height: 73.333%;
+	width: auto;
+	height: auto;
+}
+
+#scarlett {
+	position: absolute;
+	top: 29.111%;
+	left: 30%;
+	max-width: 28.692%;
+	max-height: 73.241%;
+	width: auto;
+	height: auto;
+}
+
+#kiran {
+	position: absolute;
+	top: 38.333%;
+	left: 35%;
+	max-width: 36.942%;
+	max-height: 80.185%;
+	width: auto;
+	height: auto;
+}
+
+#ariana {
+	position: absolute;
+	top: 31.111%;
+	left: 58%;
+	max-width: 23.857%;
+	max-height: 78.704%;
+	width: auto;
+	height: auto;
+}
