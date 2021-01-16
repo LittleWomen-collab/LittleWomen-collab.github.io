@@ -1,0 +1,645 @@
+/* Custom FOnt */
+@font-face {
+  font-family: "segoe-script";
+  src: url(../fonts/segoesc.ttf);
+}
+
+
+
+html {
+    width: 100%;
+    min-width: 1100px;
+    background: #444;
+    overflow: auto;
+    background: url(../images/background.jpg) top left repeat;
+}
+body {
+    //background: url(../images/background.jpg) top left repeat;
+    background-size: cover;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    min-width: 1100px;
+    //max-width: 1366px;
+    font-family: "segoe-script", cursive, serif;
+}
+.content-container {
+    min-width: 1100px;
+    max-width: 1366px;
+    //border: 1px solid orange;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ------------------- Home Pg ------------------- */
+.landing-html,
+.maya-nav-html {
+    height: 100%;
+}
+.landing-body {
+    background: url(../images/logo.png) top 60px center no-repeat;
+    background-size: 500px;
+    min-height: 800px;
+    padding-top: 250px;
+}
+
+/* ----- character styling ----- */
+.landing-char-wrapper {
+    position: absolute;
+    width: 100%;
+    //border: 1px solid darkgray;
+    top: 50%;
+    transform: translateY(-35%);
+    text-align: center;
+}
+.landing-pg-chara-container {
+    display: inline-block;
+    //border: 1px solid gray;
+    text-decoration: none;
+    max-width: 150px;
+    min-height: 50px;
+    overflow: visible;
+    padding: 0 10px;
+    transition: all 0.25s ease-in;
+}
+.landing-pg-chara-container:hover {
+    background: rgba(255, 255, 191, 0.2);
+}
+.landing-pg-chara-container p {
+    font-weight: bold;
+    font-size: 22px;
+    color: #333;
+}
+
+.chara-3 {
+    max-width: 214px;
+}
+
+.chara-1 .char-img1 { width: 150%; position: relative; left: -80px;}
+.chara-2 .char-img1 { width: 100%; }
+.chara-3 .char-img1 { width: 70%; }
+.chara-4 .char-img1 { width: 100%; }
+
+.chara-1 .char-img2 { width: 100%; }
+.chara-2 .char-img2 { width: 100%; }
+.chara-3 .char-img2 { width: 100%; }
+.chara-4 .char-img2 { width: 95%; }
+
+.landing-cta-container {
+    padding-top: 60px;
+    //border: 1px solid green;
+    background: url(../images/up-arrow.png) no-repeat left 53% top 0px;
+    color: #222;
+}
+
+a img.char-img1 {
+    display: auto;
+    //width: 150%;
+}
+.char-img2 {
+    display: auto;
+    height: 0;
+}
+
+/* ------------------- Maya Nav pg ------------------- */
+.maya-nav-html body {
+    height: 702px;
+}
+.maya-nav-body {
+    max-width: 1300px;
+    padding-top: 100px;
+}
+
+.maya-column1 {
+    //border: 1px solid green;
+    width: 33%;
+    display: inline-block;
+    position: relative;
+    height: 700px;
+    vertical-align: top;
+    margin: 0;
+    padding: 80px 0 0 0;
+    box-sizing: border-box;
+}
+.left-top-p {
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+    position: absolute;
+    right: -35%;
+    width: 400px;
+    color: #333;
+}
+
+.col1-back-btn {
+    //border: 1px solid gray;
+    display: block;
+    background: url(../images/back-arrow.png) no-repeat top right;
+    background-size: 100%;
+    height: 100px;
+    width: 200px;
+    position: absolute;
+    bottom: 8%;
+    left: 15%;
+}
+.col1-back-btn:hover {
+    opacity: 0.75;
+}
+
+
+.maya-column2 {
+    //border: 1px solid yellow;
+    width: 50%;
+    display: inline-block;
+    background: url(../images/kiran.png) no-repeat center top;
+    background-size: 70%;
+    min-height: 700px;
+    height: 120%;
+    vertical-align: top;
+    margin: 0;
+    position: relative;
+}
+.maya-column2 .kiran-link {
+    border: 1ps solid orange;
+    display: block;
+    width: 50%;
+    //height: 120px;
+    height: 20%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.maya-column2 .kiran-link:hover {background: rgba(255, 255, 191, 0.2);}
+
+.maya-column2 .board-link {
+    border: 1ps solid green;
+    display: block;
+    width: 65%;
+    height: 170px;
+    height: 30%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.maya-column2 .board-link:hover {background: rgba(255, 255, 191, 0.2);}
+
+
+maya-column3 {
+    //border: 1px solid blue;
+    width: 25%;
+    display: inline-block;
+    height: 700px;
+    vertical-align: top;
+    position: relative;
+    margin: 0;
+    padding: 80px 0 0 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* ------------------- Character Pages ------------------- */
+
+.character-info {
+    //border: 1px solid green;
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    margin: 60px 0 0 5%;
+    padding: 0;
+}
+
+.chara-details-img {
+    width: 100%;
+    -webkit-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.75);
+}
+
+
+.right-column {
+   //border: 1px solid blue;
+    display: inline-block;
+    vertical-align: top;
+    width: 38%;
+    margin: 60px 0 0 0;
+    padding: 150px 0 0 0;
+    text-align: center;
+}
+
+.character-speech {
+    font-size: 30px;
+    width: 320px;
+    line-height: 200%;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto 30px auto;
+}
+.charact-back-btn {
+    //border: 1px solid gray;
+    display: block;
+    font-size: 36px;
+    background: url(../images/back-arrow.png) no-repeat center center;
+    background-size: 40%;
+    height: 210px;
+    width: 120%;
+    text-decoration: none;
+    font-weight: bold;
+    color: #9b74a9;
+    text-align: left;
+    padding-left: 50px;
+}
+.charact-back-btn:hover {
+    opacity: 0.75;
+}
+
+
+/* ID Section */
+.id-section {
+    width: 100%;
+    background: url(../images/wood-bg.png) repeat-x top left;
+    background-size: cover;
+    text-align: center;
+    padding: 60px 0;
+    margin: 100px 0 0 0;
+}
+
+.id-section img {
+    width: 70%;
+    -webkit-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.75);
+}
+
+/* ---- Scarlett Character Page styling ----- */
+.scarlett-char-html {
+    background: url(../images/scarlett3.png) no-repeat top 130px right, url(../images/background.jpg) top left repeat;
+    background-size: 170px, 98%;
+}
+
+.scarlett-char-body {
+    overflow-x: hidden;
+}
+
+/* ---- Kiran Character Page styling ----- */
+.kiran-char-html {
+    background: url(../images/kiran3.png) no-repeat top 130px right, url(../images/background.jpg) top left repeat;
+    background-size: 170px, 98%;
+}
+.kiran-char-body {
+    background-size: 170px, 98%;
+    overflow-x: hidden;
+}
+
+/* ---- Cali Character Page styling ----- */
+.cali-char-html {
+background: url(../images/cali3.png) no-repeat top 100px right, url(../images/background.jpg) top left repeat;
+    background-size: 170px, 98%;
+}
+.cali-char-body {
+    overflow-x: hidden;
+}
+
+/* ---- Ariana Character Page styling ----- */
+.ariana-char-html {
+background: url(../images/ariana3.png) no-repeat top 100px right, url(../images/background.jpg) top left repeat;
+    background-size: 170px, 98%;
+}
+
+.ariana-char-body {
+    overflow-x: hidden;
+}
+
+/* ---- Dylan Character Page styling ----- */
+/*.dylan-char-html {
+    background: url(../images/dylan3.png) no-repeat top 100px right, url(../images/background.jpg) top left repeat;
+    background-size: 170px, 98%;
+    background-attachment: fixed;
+}
+.dylan-char-body {
+    overflow-x: hidden;
+}
+*/
+
+
+/* ------------------- Project Board Pages ------------------- */
+.project-board-html {
+    height: 100%;
+    background: url(../images/board-imgs/middle-column-bg.jpg) no-repeat top left;
+    background-size: cover;
+}
+.project-board-body {
+    background: url(../images/board-imgs/middle-column-bg.jpg) no-repeat top left;
+    background-size: cover;
+   // width: 1100px;
+    min-height: 620px;
+    max-height: 1000px;
+    min-width: 1100px;
+    height: 100%;
+
+}
+.project-board-body a.board-link {
+    transition: all 0.25s ease-in;
+}
+.project-board-body a.board-link:hover {
+    background-color: rgba(255, 255, 191, 0.2);
+}
+
+/* Column 1 */
+.board-col-1 {
+    display: inline-block;
+    vertical-align: top;
+    width: 24%;
+    height: 100%;
+    //border: 1px solid gray;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    background: url(../images/board-imgs/left-column-bg.jpg) no-repeat top right;
+    background-size: cover;
+    border-right: 2px solid #BFB3B3;
+}
+.tonality-link {
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    background: url(../images/board-imgs/tonality-sticky.png) no-repeat center center;
+    background-size: 80%;
+}
+.instagram-link {
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    background: url(../images/board-imgs/instagram-sticky.png) no-repeat center center;
+    background-size: 80%;
+}
+.board-col-1 .back-btn {
+    width: 100%;
+    height: 100px;
+    background: url(../images/back-arrow.png) no-repeat center center;
+    background-size: 75%;
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    transition: all 0.25s ease-in;
+}
+.board-col-1 a.back-btn:hover {
+    background-color: rgba(255, 255, 191, 0.2);
+    transition: all 0.25s ease-in;
+}
+
+
+/* Column 2 */
+.board-col-2 {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    height: 100%;
+    //border: 1px solid gray;
+    box-sizing: border-box;
+    text-align: center;
+    //padding-top: 17%;
+    background: url(../images/board-imgs/middle-column-bg.jpg) no-repeat top center;
+    background-size:cover;
+    border-left: 2px solid #BFB3B3;
+    border-right: 2px solid #BFB3B3;
+}
+.logo-link {
+    //border: 1px solid green;
+    display: block;
+    width: 94%;
+    margin: 0 auto;
+    height: 32%;
+    min-height: 200px;
+    background: url(../images/board-imgs/board-logo.png) no-repeat center top;
+    background-size: 96% auto;
+}
+.cast-link {
+    width: 30%;
+    height: 150px;
+    height: 30%;
+    display: inline-block;
+    position: relative;
+    left: 14px;
+    background: url(../images/board-imgs/cast-sticky.png) no-repeat top center;
+    background-size: 95%;
+}
+.characters-link {
+    width: 30%;
+    height: 150px;
+    height: 30%;
+    display: inline-block;
+    position: relative;
+    left: 14px;
+    background: url(../images/board-imgs/characters-sticky.png) no-repeat top center;
+    background-size: 95%;
+}
+.team-link {
+    width: 30%;
+    height: 30%;
+    display: inline-block;
+    position: relative;
+    left: 12px;
+    background: url(../images/board-imgs/team-sticky.png) no-repeat top center;
+    background-size: 95%;
+}
+.contact-link {
+    width: 30%;
+    height: 30%;
+    display: inline-block;
+    //margin-top: 70px;
+    background: url(../images/board-imgs/contact-sticky.png) no-repeat top center;
+    background-size: 95%;
+}
+.mission-link {
+    width: 30%;
+    height: 150px;
+    height: 30%;
+    display: inline-block;
+    //margin-top: 70px;
+    position: relative;
+    left: 10px;
+    background: url(../images/board-imgs/mission-sticky.png) no-repeat top center;
+    background-size: 95%;
+}
+
+/* Column 3 */
+.board-col-3 {
+    display: inline-block;
+    vertical-align: top;
+    width: 24%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+    background: url(../images/board-imgs/left-column-bg.jpg) no-repeat top left;
+    background-size: cover;
+    border-left: 3px solid #B8ACAC;
+    border-right: 3px solid #B8ACAC;
+}
+.testimonials-link {
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    background: url(../images/board-imgs/testimonials-sticky.png) no-repeat center center;
+    background-size: 80% auto;
+    top: 6%;
+}
+.tik-tok-link {
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    background: url(../images/board-imgs/tik-tok-sticky.png) no-repeat center center;
+    background-size: 80% auto;
+    bottom: 15%;
+}
+
+
+/* ------------------- Testimonials Page ------------------- */
+.testimonials-html {
+background: #C19FB8;
+}
+body.testimonials-body {
+    background: #C19FB8;
+    min-height: 100%;
+    height: auto;
+    overflow: auto;
+}
+.testimonial-wrapper {
+    //border: 1px solid blue;
+    width: 65%;
+    margin: 0 auto;
+    padding: 100px 0 200px 0;
+    position: relative;
+}
+.testimonial-wrapper h1 {
+   font-size: 36px; 
+}
+.testimonial-wrapper p {
+    font-size: 26px;
+}
+.testimonial-wrapper p a {
+    text-decoration: none;
+    color: black;
+}
+.testimonial-wrapper p a:hover {
+    opacity: 0.5;
+    font-weight: bold;
+}
+.testimonials-body .back-btn {
+    //border: 1px solid black;
+    background: url(../images/back-arrow.png) no-repeat center center;
+    background-size: 100%;
+    display: block;
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    right: 10%;
+}
+
+/* ------------------- Contact Page ------------------- */
+.contact-html {
+    background: #C19FB8;
+}
+
+.contact-html .testimonial-wrapper {
+    background: url(../images/ariana.png) no-repeat top 24% right 18%;
+    background-size: 120px;
+}
+.contact-html a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------- Chracters Page ------------------- */
+.characters2-html body {
+    //background: #DAB7BB;
+}
+.character-section {
+    width: 100%;
+    //border: 2px solid orange;
+}
+.character-section img {
+    width: 1000px;
+    display: block;
+    margin: 0 auto;
+}
+.jill-section img {
+    width: 1000px;
+    display: block;
+    margin: 0 auto;
+}
+.jill-section {
+    margin-top: 100px;
+}
+.end-section {
+    margin-bottom: 100px;
+    background: #DAB7BB;
+    width: 1000px;
+    margin: 0 auto 100px auto;
+    padding: 50px 0;
+    position: relative;
+    height: 100px;
+}
+
+.characters2-html .back-btn {width:300px;}
+.characters2-html .back-btn:hover {opacity:0.6;}
+
+/* ------------------- Cast Page ------------------- */
+.cast-html {
+    background: #D2A39B;
+}
+.cast-html .testimonials-body {
+    background: #D2A39B;
+}
+.cast-html .character-section {
+    margin-bottom: 80px;
+}
+.cast-html .end-section {background: #D2A39B;}
+.cast-html .back-btn {width:300px;}
+.cast-html .back-btn:hover {opacity:0.6;}
+
+/* ------------------- Mission Page ------------------- */
+.mission-html {
+    background: #B0C4CD;
+}
+.mission-html body {
+    background: #B0C4CD;
+}
+.mission-html .end-section {background: #B0C4CD; padding-top: 0;}
+.mission-html .back-btn {width:300px;}
+.mission-html .back-btn:hover {opacity:0.6;}
+
+/* ------------------- Team Page ------------------- */
+.team-html {
+    background: #DDB89E;
+}
+.team-html body{
+    background: #DDB89E;
+    background-image: none;
+}
+
+.team-html .character-section img {
+    //width: 1200px;
+}
+.team-html .end-section {background: #DDB89E; padding-top: 0;}
+.team-html .back-btn {
+    background-size: 100%;
+    width: 280px;
+    height: 150px;
+}
+.team-html .back-btn:hover {opacity:0.6;}
+
+/* ------------------- Tonality Page ------------------- */
+.tonality-html {
+    background: #C19FB8;
+}
+.tonality-html body {
+    background: #C19FB8;
+}
+.tonality-html .end-section {background: #C19FB8; padding-top: 0;}
+.tonality-html .back-btn {width:300px;}
+.tonality-html .back-btn:hover {opacity:0.6;}

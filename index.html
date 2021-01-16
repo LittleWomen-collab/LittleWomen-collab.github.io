@@ -1,18 +1,63 @@
 <!DOCTYPE html>
- <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
- <head id="main_head">
-     <meta http-equiv="content-type" content="text/html" charset="utf-8" />
-     <title>Little Women</title>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta name="description" content="">
-     <link rel="StyleSheet" id="main_css" />
-     <link rel="icon" type="image/png" href="https://www.littlewomen.tv/cover_1/logo.png">
-     <script src="https://www.littlewomen.tv/littleWomen_googlefonts.js"></script>
-
- </head>
-
- <body contenteditable="false">
-     <div id="main_body"></div>
-     <script src="./index.js"></script>
- </body>
+<html class="landing-html">
+    <head>
+        <meta charset="UTF-8">
+        <!-- <meta name="viewport" content="width = device-width, initial-scale = 1.0"> -->
+        <link rel="stylesheet" href="css/main.css">
+        <title>Little Women</title>
+        
+        <meta property=“og:image” content="http://oscartst.x10.mx/little-women/images/logo.png" />
+        <meta name=”twitter:image” content="http://oscartst.x10.mx/little-women/images/logo.png">
+    </head>
+    
+    <body class="landing-body" onload="setTimeout(replaceImages, 1800)">
+        <div class="landing-char-wrapper">
+            <a href="characters/cali/index.html" class="landing-pg-chara-container chara-1">
+                <img src="images/cali2.png" class="char-img1">
+                <img src="images/cali.png" class="char-img2">
+                <p>Jill</p>
+            </a>
+            <a href="characters/scarlett/index.html" class="landing-pg-chara-container chara-2">
+                <img src="images/scarlett2.png" class="char-img1">
+                <img src="images/scarlett.png" class="char-img2">
+                <p>Scarlett</p>
+            </a>
+            <a href="characters/../maya-nav/" class="landing-pg-chara-container chara-3">
+                <img src="images/kiran2.png" class="char-img1">
+                <img src="images/kiran.png" class="char-img2">
+                <p>Maya</p>
+            </a>
+            <a href="characters/ariana/index.html" class="landing-pg-chara-container chara-4">
+                <img src="images/ariana2.png" class="char-img1">
+                <img src="images/ariana.png" class="char-img2">
+                <p>Tiana</p>
+            </a>
+            <div class="landing-cta-container">
+                <h1>Click her to learn more about us!</h1>
+            </div>
+        </div>
+    </body>
+    
+    <script>
+        
+       
+        
+        function replaceImages() {
+            var images1 = document.getElementsByClassName("char-img1");
+            var images2 = document.getElementsByClassName("char-img2");
+            
+            images1[0].style.display = "none";
+            images1[1].style.display = "none";
+            images1[2].style.display = "none";
+            images1[3].style.display = "none";
+            
+            images2[0].style.height = "auto";
+            images2[1].style.height = "auto";
+            images2[2].style.height = "auto";
+            images2[3].style.height = "auto";
+            
+        }
+        
+    </script>
+    
 </html>
